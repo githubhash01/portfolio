@@ -12,50 +12,49 @@ const last_posts = posts.slice(0, 3);
 <BaseLayout sideBarActiveItemID="home">
   <div class="pb-12 mt-5">
     <div class="text-xl py-1">Hey there 👋</div>
-    <div class="text-5xl font-bold">I'm Manuel Ernesto</div>
-    <div class="text-3xl py-3 font-bold">Software Engineer and Entrepreneur</div>
+    <div class="text-5xl font-bold">I'm Hashim Al-Obaidi</div>
+    <div class="text-3xl py-3 font-bold">Software Engineer</div>
     <div class="py-2">
       <text class="text-lg">
-        This is <b>Astrofy</b> a free and open-source template for your Personal Portfolio Website built with Astro and TailwindCSS.
-        Create in minutes a website with Blog, CV, Project Section, Store and RSS Feed. I hope you find
-        it useful!
+      I am a final year Computer Science BEng. student at the University of Edinburgh. I have a passion for robotics, computer vision
+      and applied machine learning. I have experience writing code for an international media
+      company, a small spectrometer manufacturer, for an autonomous driving club, at hackathons
+      and throughout my degree. I am currently researching differentiable policy gradient methods for
+      improved robot learning, as well as taking advanced modules on robotics, computer vision and
+      machine learning systems.
       </text>
     </div>
     <div class="mt-8">
-      <a class="btn" href="https://twitter.com/manuelernestog" target="_blank"> Let's connect!</a>
-      <a href="https://github.com/manuelernestog/astrofy" target="_blank" class="btn btn-outline ml-5">
-        Get This template
+      <a class="btn" href="https://linkedin.com/in/hashimalobaidi" target="_blank"> Let's connect!</a>
+      <a href="https://drive.google.com/file/d/1IRR9Ag_6BZdJJz82iJliBkyLMhHvSXE2/view?usp=sharing" target="_blank" class="btn btn-outline ml-5">
+        Download My CV
+      </a>
       </a>
     </div>
   </div>
 
   <div>
-    <div class="text-3xl w-full font-bold mb-2">My last projects {"</>"}</div>
+    <div class="text-3xl w-full font-bold mb-2">Highlights {"</>"}</div>
   </div>
 
   <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+    title="RL Differentiable Simulation"
+    img="/MJX.webp"
+    desc="Working on benchmarking the sample-efficiency and wall-clock performance of learning RL policies for robotics tasks with and without gradient information. Successfully trained both model-based and model-free RL policies for simple examples using MuJoCo with JAX. Exploring alternative differentiable simulators, like Brax, and Nvidia Warp due to errors in MuJoCo for calculating derivatives with contact forces"
+    url="https://github.com/githubhash01/Honours-Project"
+    badge="WORK IN PROGRESS"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Humanoid Robotic Manipulation"
+    img="/Kawada.webp"
+    desc="Programmed a Kawada Industries Nextage robot to pick and place a cube on a table, avoiding obstacles, simulated using PyBullet - achieving a final grade of 94% for the project. Made extensive use of Pinocchio rigid body dynamics library to define kinematics functions, a modified version of RRT algorithm and Inertial Control law. Achieved extremely fast motion planning by using a KD-tree for RRT, applying search heuristics, and performing collision checks within inverse kinematics calculations (2 seconds for trajectory calculation vs 2 minutes using naive methods)Extensively tested the task by changing start and goal positions and orientations, resulting in robust 100% task completion rates for randomised object placement"
+    url="https://github.com/githubhash01/AR0"
     badge="NEW"
   />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
-  />
 
+
+  <!--
   <div>
     <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
   </div>
@@ -75,4 +74,5 @@ const last_posts = posts.slice(0, 3);
       </>
     ))
   }
+  -->
 </BaseLayout>
