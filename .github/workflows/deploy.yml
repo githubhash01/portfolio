@@ -18,15 +18,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout your repository using git
-        uses: actions/checkout@v4
-      - name: Install, build, and upload your site output
-        uses: withastro/action@v2
-        # with:
-            # path: . # The root location of your Astro project inside the repository. (optional)
-            # node-version: 20 # The specific version of Node that should be used to build your site. Defaults to 18. (optional)
-            # package-manager: pnpm@latest # The Node package manager that should be used to install dependencies and build your site. Automatically detected based on your lockfile. (optional)
-
+    - name: Install, build, and upload your site output
+      uses: withastro/action@v2
+      with:
+        path: . # Assuming the Astro project is in the root of the repository
+        node-version: 20 # Use the latest stable Node.js version
+        package-manager: npm # Specify if you're using npm or another package manager like pnpm or yarn
   deploy:
     needs: build
     runs-on: ubuntu-latest
