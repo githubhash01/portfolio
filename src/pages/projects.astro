@@ -5,17 +5,45 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 
 <BaseLayout title = "Projects" sideBarActiveItemID="projects">
   <div>
-    <div class="text-3xl w-full font-bold mb-5">Ongoing Projects</div>
+    <div class="text-3xl w-full font-bold mb-5">Completed Projects</div>
   </div>
 
-<HorizontalCard
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Delivery Drone Routing"
+    img="/portfolio/A_Star.webp"
+    desc="This project involved developing a drone-based pizza delivery system that autonomously processes orders, calculates optimal delivery routes, and ensures compliance with no-fly zones. The system retrieves real-time data from a REST API, processes customer orders, and generates flight paths while optimizing for efficiency and safety."
+    url="https://github.com/githubhash01/A-Star-Drone-Routing"
+  />
+
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="SmartSymphony Piano"
+    img="/portfolio/post_img.webp"
+    desc="A robotic system designed to support piano learners by providing automated accompaniment, visual note guidance, and real-time performance feedback. The system integrates robotic actuators, an LED strip, a microphone, and a web application, allowing users to upload MIDI sheet music, which is then processed into hardware instructions for guided learning."
+    url="https://github.com/githubhash01/SmartSymphony.git"
+  />
+
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="MNIST Numpy Classifier"
+    img="/portfolio/MNIST.webp"
+    desc="Programmed a simple classifier from scratch only using Numpy to predict MNIST images' digits"
+    url="https://github.com/githubhash01/MNIST"
+  />
+
+  <div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Ongoing Projects</div>
+  </div>
+
+  <HorizontalCard
     title="Differentiable Simulation RL"
     img="/portfolio/MJX.webp"
     desc="Working on benchmarking the sample-efficiency and wall-clock performance of learning RL policies for robotics tasks with and without gradient information. Successfully trained both model-based and model-free RL policies for simple examples using MuJoCo with JAX. Exploring alternative differentiable simulators, like Brax, and Nvidia Warp due to errors in MuJoCo for calculating derivatives with contact forces"
-
     url="https://github.com/githubhash01/Honours-Project"
     badge="JAX, MuJoCo"
   />
+
   <div class="divider my-0"></div>
   <HorizontalCard
     title="Computer Vision Project"
@@ -31,33 +59,5 @@ import HorizontalCard from "../components/HorizontalCard.astro";
     img="/portfolio/ComputationGraph.webp"
     desc="Wating for it to be released" 
     url="https://github.com/githubhash01/Machine-Learning-Systems"
-  />
-
-  <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Completed Projects</div>
-  </div>
-
-    <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Delivery Drone Routing"
-    img="/portfolio/A_Star.webp"
-    desc="Robotic piano to help teach newbies how to play piano"
-    url="#"
-    />
-
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="SmartSymphony Piano"
-    img="/portfolio/post_img.webp"
-    desc="Robotic piano to help teach newbies how to play piano"
-    url="#"
-  />
-
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="MNIST Numpy Classifier"
-    img="/portfolio/MNIST.webp"
-    desc="Programmed a simple classifier from scratch only using Numpy to predict MNIST images' digits"
-    url="https://github.com/githubhash01/MNIST"
   />
 </BaseLayout>
